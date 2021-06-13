@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -36,7 +36,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
   padding: 0;
 
   @include mobile {
@@ -115,9 +114,15 @@ img {
   max-width: none;
 }
 
+.title {
+  margin-bottom: 40px;
+}
+
 .date {
+  font-size: 14px;
   font-style: italic;
   color: $gray;
+  margin-bottom: 40px;
 }
 
 // Specify the color of the selection
@@ -151,12 +156,13 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: none;
 
   @include mobile {
     text-align: center;
@@ -275,7 +281,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-color: $white;
 }
 
 footer {
@@ -287,3 +293,4 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+@import "tags"; 

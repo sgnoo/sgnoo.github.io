@@ -3,16 +3,16 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+    <div class="tags">
+        {% for tag_data in site.data.tags %}
+            <a href="{{ site.baseurl }}/tag/{{ tag_data.slug }}" class="tag" />{{ tag_data.name }}</a>
+        {% endfor %}
+    </div>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+    {% for post in site.posts %}
+    <span class="date">{{ post.date | date_to_string }}</span>
+    <h1 class="title">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </h1>
+    {% endfor %}
 </div>
