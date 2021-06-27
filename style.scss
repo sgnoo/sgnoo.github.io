@@ -45,6 +45,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 16px;
   a {
     color: inherit;
   }
@@ -52,10 +54,14 @@ h1 {
 
 h2 {
   font-size: 24px;
+  border-bottom: 1px solid #eeeeee;
+  margin-top: 20px;
 }
 
 h3 {
   font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: -10px;
 }
 
 h4 {
@@ -74,6 +80,11 @@ a {
   &:hover, &:active {
     color: $blue;
   }
+}
+
+li{
+  margin: 6px 0;
+  padding-left: 6px;
 }
 
 ul, ol {
@@ -116,10 +127,12 @@ img {
 
 .title {
   margin-bottom: 40px;
+  font-size: 22px;
+  color: $blue;
 }
 
 .date {
-  font-size: 14px;
+  font-size: 13px;
   font-style: italic;
   color: $gray;
   margin-bottom: 40px;
@@ -204,6 +217,8 @@ img {
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
+
+  border-bottom: 0;
 }
 
 .site-description {
@@ -219,7 +234,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $andale;
+  font-family: $comic;
   font-size: 18px;
 
   @include mobile {

@@ -4,7 +4,7 @@ title: EVM Assembly
 tags: [solidity]
 ---
 
-# assembly
+## assembly
 assembler는 assembly language를 machine code로 변경한다. assembly는 assembler language라고도 부른다. Intel x86에는 1503개의 machine instruction이 존재한다. 이러한 machine instruction을 opcode라고도 부른다.
 
 ## EVM assembly
@@ -23,10 +23,10 @@ contract C {
 ~~~
 
 EVM은 stack machine이다. 이 데이터 자료형에서는 오직 PUSH와 POP만 수행한다. stack은 Last in, First out 구조다. stack machine에서 명령어는 하나 또는 그 이상의 값을 stack에서 pop하여 연산하고 결과값을 다시 push한다.
-```
+~~~text
 a + b // Standard Notation
 a b add // Reverse Polish Notation
-```
+~~~
 
 ### Everything is an uint in Assembly
 efficiency를 위해, EVM Assembly는 모든 값들을 256-bit 숫자로 취급한다.

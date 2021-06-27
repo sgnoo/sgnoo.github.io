@@ -4,12 +4,20 @@
   background-color: #eeeff0;
   border-radius: 8px;
   padding: 7px 7px 7px 10px;
-  margin: 20px 0 20px 0;
   overflow: scroll;
 }
 
+.language-plaintext {
+  background: #f5f5f5;
+  padding: 6px;
+  padding-top: 4px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
 code {
-  font-family: $andale
+  font-family: $andale;
+  font-size: 16px;
 }
 
 .highlight .hll { background-color: #ffffcc }
