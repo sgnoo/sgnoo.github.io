@@ -21,6 +21,7 @@ body {
   background: $white;
   font: 18px/1.4 $comic;
   color: $darkGray;
+  line-height: 1.6;
 }
 
 .container {
@@ -120,6 +121,17 @@ img {
   max-width: 100%;
   display: block;
   margin: 0px auto;
+}
+
+.image-wrapper {
+  text-align: center;
+
+  .image-caption {
+    color: $gray;
+    margin-top: 5px;
+    font-size: 14px;
+    font-style: italic;
+  }
 }
 
 // Fixes images in popup boxes from Google Translate

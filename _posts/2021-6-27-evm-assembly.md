@@ -33,7 +33,12 @@ efficiency를 위해, EVM Assembly는 모든 값들을 256-bit 숫자로 취급�
 
 Solidity는 256 bit보다 narrow한 타입을 스스로 인지하기 때문에, 해당 타입의 값을 memory에 쓰거나 comparison을 수행하기 전에 higher-order bits를 직접 clean하게 만든다. **이에 반해 assembly에서는 이를 위해 직접 higher-order bits를 clean하게 만들어줘야 할 수도 있다.**
 
-![higher-order and lower-order bits](https://i.imgur.com/WjaEO1u.png)
+{% include image.html
+           img="/images/test1.png"
+           title="title for image"
+           caption="그림 1. higher-order and lower-order bits"
+           url="https://i.imgur.com/WjaEO1u.png"
+%}
 
 ## Why use Assembly in Solidity ?
 
